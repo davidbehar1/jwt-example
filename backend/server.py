@@ -9,7 +9,7 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 origins = [
-    "*", # nginx ip
+    "http://frontend:5173", # nginx ip
 ]
 
 JWT_SECRET_KEY = "secret_key" # Should be saved as env var

@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "*", # NGINX ip
+    "http://frontend:5173", # NGINX ip
 ]
 
 JWT_SECRET_KEY = "secret_key" # Should be saved as env var

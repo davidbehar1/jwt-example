@@ -1,0 +1,1 @@
+RUN SERVER: python -m uvicorn server:app --port 5000 --reload
